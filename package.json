@@ -1,0 +1,33 @@
+{
+  "name": "ST7789",
+  "description": "Please add description of ST7789 in English.",
+  "description_zh": "ST7789驱动软件包，使用SPI接口，支持RT-Thread。",
+  "enable": "PKG_USING_ST7789",
+  "keywords": [
+    "ST7789"
+  ],
+  "category": "peripherals",
+  "author": {
+    "name": "Passionate0424",
+    "email": "1852282973@qq.com",
+    "github": "Passionate0424"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/Passionate0424/RT-Thread-ST7789-Package.git",
+  "icon": "unknown",
+  "homepage": "https://github.com/Passionate0424/RT-Thread-ST7789-Package.git#readme",
+  "doc": "unknown",
+  "site": [
+    {
+      "version": "v1.0.0",
+      "URL": "https://ST7789-1.0.0.zip",
+      "filename": "ST7789-1.0.0.zip"
+    },
+    {
+      "version": "latest",
+      "URL": "https://github.com/Passionate0424/RT-Thread-ST7789-Package.git.git",
+      "filename": "",
+      "VER_SHA": "master"
+    }
+  ]
+}
