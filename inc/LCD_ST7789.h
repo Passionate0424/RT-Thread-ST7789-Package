@@ -27,16 +27,16 @@
 
 //==================== LCD参数与硬件宏定义 ====================
 #define BACK_COLOR BLACK // 默认背景色
-#define LCD_W 240        // 屏幕宽度(像素)
-#define LCD_H 320        // 屏幕高度(像素)
+#define LCD_W PKG_ST_7789_WIDTH        // 屏幕宽度(像素)
+#define LCD_H PKG_ST_7789_HEIGHT        // 屏幕高度(像素)
 #define FAST 1           // 快速刷图开关 1:快 0:慢
 
 // 硬件引脚定义（需根据实际硬件修改）
-#define LCD_DC_PIN GET_PIN(10, 3)  // 数据/命令选择
-#define LCD_RES_PIN GET_PIN(5, 7)  // 复位
-#define LCD_BLK_PIN GET_PIN(11, 5) // 背光
-#define LCD_CS_PIN GET_PIN(0, 5)   // SPI片选
-#define LCD_SPI_BUS "spi0"         // SPI总线名
+#define LCD_DC_PIN PKG_ST_7789_DC_PIN  // 数据/命令选择
+#define LCD_RES_PIN PKG_ST_7789_RES_PIN  // 复位
+#define LCD_BLK_PIN PKG_ST_7789_BLK_PIN  // 背光
+#define LCD_CS_PIN PKG_ST_7789_CS_PIN   // SPI片选
+#define LCD_SPI_BUS PKG_ST_7789_SPI_BUS_NAME         // SPI总线名
 
 // 引脚控制宏
 #define LCD_RES_CLR rt_pin_write(LCD_RES_PIN, PIN_LOW)

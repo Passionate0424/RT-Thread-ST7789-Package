@@ -7,7 +7,7 @@ src = []
 if GetDepend("PKG_USING_ST7789"):
     src +=Glob('src/LCD_ST7789.c')
     src +=Glob('src/font.c')
-if GetDepend("PKG_USING_ST7789_EXAMPLE"):
+if GetDepend("PKG_USING_ST7789_SAMPLE"):
     src +=Glob('examples/LCD_ST7789_Sample.c')
 
 path  = [cwd + '/inc']
