@@ -2,9 +2,9 @@
  * =====================================================================================
  * @file    LCD_ST7789.c
  * @brief   ST7789 LCD驱动实现 - RT-Thread适配版
- * @author  Passionate.Z
+ * @author  Passionate0424
  * @date    2025-07-11
- * @version 1.0
+ * @version 1.0.0
  *
  * 主要功能：
  *   - LCD初始化配置

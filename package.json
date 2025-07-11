@@ -1,5 +1,5 @@
 {
-  "name": "ST7789",
+  "name": "ST7789_SPI",
   "description": "ST7789 driver package for RT-Thread using SPI interface.",
   "description_zh": "ST7789驱动软件包，使用SPI接口，支持RT-Thread。",
   "enable": "PKG_USING_ST7789",

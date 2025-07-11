@@ -4,14 +4,14 @@ from building import *
 cwd = GetCurrentDir()
 src = []
 
-if GetDepend("PKG_USING_ST7789"):
+if GetDepend("PKG_USING_ST7789_SPI"):
     src +=Glob('src/LCD_ST7789.c')
     src +=Glob('src/font.c')
-if GetDepend("PKG_USING_ST7789_SAMPLE"):
+if GetDepend("PKG_USING_ST7789_SPI_SAMPLE"):
     src +=Glob('examples/LCD_ST7789_Sample.c')
 
 path  = [cwd + '/inc']
 
-group = DefineGroup('LCD_ST7789', src, depend = ['PKG_USING_ST7789'], CPPPATH = path)
+group = DefineGroup('LCD_ST7789_SPI', src, depend = ['PKG_USING_ST7789_SPI'], CPPPATH = path)
 
 Return('group')
