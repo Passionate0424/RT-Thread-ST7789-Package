@@ -14,19 +14,19 @@
   },
   "license": "MIT",
   "repository": "https://github.com/Passionate0424/RT-Thread-ST7789-Package.git",
-  "icon": "unknown",
+  "icon": "ST7789驱动软件包，使用SPI接口，支持RT",
   "homepage": "https://github.com/Passionate0424/RT-Thread-ST7789-Package.git#readme",
-  "doc": "unknown",
+  "doc": "A ST7789 package for rt-thread",
   "site": [
     {
       "version": "v1.0.0",
-      "URL": "https://ST7789-1.0.0.zip",
-      "filename": "ST7789-1.0.0.zip"
+      "URL": "https://github.com/Passionate0424/RT-Thread-ST7789-Package/archive/refs/tags/1.0.0.zip",
+      "filename": "RT-Thread-ST7789-Package-1.0.0.zip"
     },
     {
       "version": "latest",
-      "URL": "https://github.com/Passionate0424/RT-Thread-ST7789-Package.git.git",
-      "filename": "",
+      "URL": "https://github.com/Passionate0424/RT-Thread-ST7789-Package/archive/refs/tags/1.0.0.zip",
+      "filename": "RT-Thread-ST7789-Package-1.0.0.zip",
       "VER_SHA": "master"
     }
   ]
