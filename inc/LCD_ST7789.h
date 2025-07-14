@@ -26,17 +26,17 @@
 // #include <rtdevice.h>
 
 //==================== LCD参数与硬件宏定义 ====================
-#define BACK_COLOR BLACK // 默认背景色
-#define LCD_W PKG_ST_7789_WIDTH        // 屏幕宽度(像素)
-#define LCD_H PKG_ST_7789_HEIGHT        // 屏幕高度(像素)
-#define FAST 1           // 快速刷图开关 1:快 0:慢
+#define BACK_COLOR BLACK         // 默认背景色
+#define LCD_W PKG_ST_7789_WIDTH  // 屏幕宽度(像素)
+#define LCD_H PKG_ST_7789_HEIGHT // 屏幕高度(像素)
+#define FAST 1                   // 快速刷图开关 1:快 0:慢
 
 // 硬件引脚定义（需根据实际硬件修改）
-#define LCD_DC_PIN PKG_ST_7789_DC_PIN  // 数据/命令选择
-#define LCD_RES_PIN PKG_ST_7789_RES_PIN  // 复位
-#define LCD_BLK_PIN PKG_ST_7789_BLK_PIN  // 背光
-#define LCD_CS_PIN PKG_ST_7789_CS_PIN   // SPI片选
-#define LCD_SPI_BUS PKG_ST_7789_SPI_BUS_NAME         // SPI总线名
+#define LCD_DC_PIN PKG_ST_7789_DC_PIN        // 数据/命令选择
+#define LCD_RES_PIN PKG_ST_7789_RES_PIN      // 复位
+#define LCD_BLK_PIN PKG_ST_7789_BLK_PIN      // 背光
+#define LCD_CS_PIN PKG_ST_7789_CS_PIN        // SPI片选
+#define LCD_SPI_BUS PKG_ST_7789_SPI_BUS_NAME // SPI总线名
 
 // 引脚控制宏
 #define LCD_RES_CLR rt_pin_write(LCD_RES_PIN, PIN_LOW)
@@ -112,6 +112,8 @@ void Draw_Circle(u16 x0, u16 y0, u8 r, u16 color);
 void LCD_Fill(u16 sx, u16 sy, u16 ex, u16 ey, u16 color);
 void LCD_ShowImage(u16 x, u16 y, u16 width, u16 height, const u16 *p);
 void LCD_Color_Fill(u16 sx, u16 sy, u16 ex, u16 ey, u16 *color);
+void LCD_DrawPoints(u16 *points_x, u16 *points_y, u16 point_count, u16 color);                 // 批量绘制点
+void LCD_DispFlush(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, const uint16_t *pData); // 区域刷屏（适配LVGL等GUI）
 
 //==================== 文本显示API ===========================
 void LCD_ShowChar(u16 x, u16 y, char chr, u8 size, u8 mode, u16 color, u16 bg_color);
